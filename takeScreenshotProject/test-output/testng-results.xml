@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-20T10:42:26 MYT" name="Screenshot test" finished-at="2024-02-20T10:42:45 MYT" duration-ms="19301">
+  <suite started-at="2024-02-20T11:36:50 MYT" name="Screenshot test" finished-at="2024-02-20T11:37:31 MYT" duration-ms="40249">
     <groups>
     </groups>
-    <test started-at="2024-02-20T10:42:26 MYT" name="Screenshot test 001" finished-at="2024-02-20T10:42:45 MYT" duration-ms="19301">
+    <test started-at="2024-02-20T11:36:50 MYT" name="Screenshot test 001" finished-at="2024-02-20T11:37:31 MYT" duration-ms="40249">
       <class name="com.report.takeScreenshotProject.AppTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.report.takeScreenshotProject.AppTest@4b741d6d]" started-at="2024-02-20T10:42:26 MYT" name="setUp" finished-at="2024-02-20T10:42:38 MYT" duration-ms="12253" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.report.takeScreenshotProject.AppTest@7674f035]" started-at="2024-02-20T11:36:50 MYT" name="setUp" finished-at="2024-02-20T11:37:23 MYT" duration-ms="32224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC002()[pri:0, instance:com.report.takeScreenshotProject.AppTest@4b741d6d]" started-at="2024-02-20T10:42:38 MYT" name="TC002" description="Passed TC, take some screenshots" finished-at="2024-02-20T10:42:44 MYT" duration-ms="5912" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC002 -->
-        <test-method signature="TC001()[pri:1, instance:com.report.takeScreenshotProject.AppTest@4b741d6d]" started-at="2024-02-20T10:42:44 MYT" name="TC001" description="Failed TC, Take screenshot when failed" finished-at="2024-02-20T10:42:44 MYT" duration-ms="32" status="FAIL">
+        <test-method signature="TC001()[pri:-1, instance:com.report.takeScreenshotProject.AppTest@7674f035]" started-at="2024-02-20T11:37:23 MYT" name="TC001" description="Failed TC, Take screenshot when failed" finished-at="2024-02-20T11:37:23 MYT" duration-ms="71" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Title does not match expected title expected [Orange] but found [OrangeHRM]]]>
@@ -27,7 +23,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
-at com.report.takeScreenshotProject.AppTest.TC001(AppTest.java:50)
+at com.report.takeScreenshotProject.AppTest.TC001(AppTest.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,7 +58,33 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.report.takeScreenshotProject.AppTest@4b741d6d]" started-at="2024-02-20T10:42:44 MYT" name="tearDown" finished-at="2024-02-20T10:42:45 MYT" duration-ms="1032" status="PASS">
+        <test-method is-config="true" signature="screenshotIfFailed(org.testng.ITestResult)[pri:0, instance:com.report.takeScreenshotProject.AppTest@7674f035]" started-at="2024-02-20T11:37:23 MYT" name="screenshotIfFailed" finished-at="2024-02-20T11:37:25 MYT" duration-ms="2421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC001 status=FAILURE method=AppTest.TC001()[pri:-1, instance:com.report.takeScreenshotProject.AppTest@7674f035] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotIfFailed -->
+        <test-method signature="TC002()[pri:0, instance:com.report.takeScreenshotProject.AppTest@7674f035]" started-at="2024-02-20T11:37:25 MYT" name="TC002" description="Passed TC, take some screenshots" finished-at="2024-02-20T11:37:30 MYT" duration-ms="4908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method is-config="true" signature="screenshotIfFailed(org.testng.ITestResult)[pri:0, instance:com.report.takeScreenshotProject.AppTest@7674f035]" started-at="2024-02-20T11:37:30 MYT" name="screenshotIfFailed" finished-at="2024-02-20T11:37:30 MYT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC002 status=SUCCESS method=AppTest.TC002()[pri:0, instance:com.report.takeScreenshotProject.AppTest@7674f035] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotIfFailed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.report.takeScreenshotProject.AppTest@7674f035]" started-at="2024-02-20T11:37:30 MYT" name="tearDown" finished-at="2024-02-20T11:37:31 MYT" duration-ms="544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

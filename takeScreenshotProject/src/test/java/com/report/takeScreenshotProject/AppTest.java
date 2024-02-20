@@ -41,19 +41,20 @@ public class AppTest {
 	
 	@AfterClass
 	public void tearDown() throws Exception {
-		driver.close();
+//		driver.close();
 		driver.quit();
 	}
 	
 	@AfterMethod
 	public void screenshotIfFailed(ITestResult testResult) throws Exception {
 		if (testResult.getStatus() == ITestResult.FAILURE){
-			System.out.println("testResult.getStatus()");
+			System.out.println(testResult.getStatus());
 			takeScreenshot();
+			Thread.sleep(2000);
 		}
 	}
 	
-	@Test (priority = 1, description = "Failed TC, Take screenshot when failed")
+	@Test (priority = -1, description = "Failed TC, Take screenshot when failed")
 	public void TC001() throws IOException {
 		String expectedTitle = "Orange";
 		String actualTitle = driver.getTitle();
@@ -77,6 +78,7 @@ public class AppTest {
 		//take screenshot after login
 		takeScreenshot();
 	}
+	
 	
 	
 	

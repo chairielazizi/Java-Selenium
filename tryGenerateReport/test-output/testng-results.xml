@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-16T16:05:02 MYT" name="Sample Test Suite" finished-at="2024-02-16T16:05:06 MYT" duration-ms="4007">
+  <suite started-at="2024-02-20T11:00:26 MYT" name="Sample Test Suite" finished-at="2024-02-20T11:00:34 MYT" duration-ms="7975">
     <groups>
     </groups>
-    <test started-at="2024-02-16T16:05:02 MYT" name="Google Test" finished-at="2024-02-16T16:05:06 MYT" duration-ms="4007">
+    <test started-at="2024-02-20T11:00:26 MYT" name="Google Test" finished-at="2024-02-20T11:00:34 MYT" duration-ms="7975">
       <class name="com.report.tryGenerateReport.TestPDFFile">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.report.tryGenerateReport.TestPDFFile@4a83a74a]" started-at="2024-02-16T16:05:02 MYT" name="setUp" finished-at="2024-02-16T16:05:05 MYT" duration-ms="3563" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.report.tryGenerateReport.TestPDFFile@4a83a74a]" started-at="2024-02-20T11:00:26 MYT" name="setUp" finished-at="2024-02-20T11:00:33 MYT" duration-ms="7603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testMethod2()[pri:0, instance:com.report.tryGenerateReport.TestPDFFile@4a83a74a]" started-at="2024-02-16T16:05:05 MYT" name="testMethod2" description="Sample Test Pass Reported in PDF" finished-at="2024-02-16T16:05:05 MYT" duration-ms="23" status="PASS">
+        <test-method signature="testMethod2()[pri:0, instance:com.report.tryGenerateReport.TestPDFFile@4a83a74a]" started-at="2024-02-20T11:00:33 MYT" name="testMethod2" description="Sample Test Pass Reported in PDF" finished-at="2024-02-20T11:00:33 MYT" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod2 -->
-        <test-method signature="testMethod1()[pri:1, instance:com.report.tryGenerateReport.TestPDFFile@4a83a74a]" started-at="2024-02-16T16:05:05 MYT" name="testMethod1" description="Sample Test Fail Reported in PDF" finished-at="2024-02-16T16:05:06 MYT" duration-ms="23" status="FAIL">
+        <test-method signature="testMethod1()[pri:1, instance:com.report.tryGenerateReport.TestPDFFile@4a83a74a]" started-at="2024-02-20T11:00:33 MYT" name="testMethod1" description="Sample Test Fail Reported in PDF" finished-at="2024-02-20T11:00:34 MYT" duration-ms="19" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Title not matched expected [TestingFailed] but found [Google]]]>
@@ -62,7 +62,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.report.tryGenerateReport.TestPDFFile@4a83a74a]" started-at="2024-02-16T16:05:06 MYT" name="tearDown" finished-at="2024-02-16T16:05:06 MYT" duration-ms="342" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.report.tryGenerateReport.TestPDFFile@4a83a74a]" started-at="2024-02-20T11:00:34 MYT" name="tearDown" finished-at="2024-02-20T11:00:34 MYT" duration-ms="279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
