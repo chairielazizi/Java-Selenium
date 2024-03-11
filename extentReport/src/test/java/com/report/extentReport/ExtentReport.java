@@ -54,7 +54,8 @@ public class ExtentReport {
 	public void tearDown() throws Exception {
 //			driver.close();
 		driver.quit();
-		test1.pass("Closed the browser");
+		extent.getStats();
+//		test1.pass("Closed the browser");
 		test2.pass("Closed the browser");
 		
 		test1.info("test completed");
@@ -73,11 +74,19 @@ public class ExtentReport {
 		
 		String expectedTitle = "Orange";
 		String actualTitle = driver.getTitle();
-		test1.pass("Checking whether [" + expectedTitle + "] to be the same as [" + actualTitle + "]");
+		test1.info("Checking whether [" + expectedTitle + "] to be the same as [" + actualTitle + "]");
 		
-		Assert.assertEquals(actualTitle, expectedTitle, "Title does not match expected title");
-		test1.pass("The titles are matched");
-		test1.fail("The titles are not matched");
+//		Assert.assertEquals(actualTitle, expectedTitle, "Title does not match expected title");
+		boolean verifyTitle = actualTitle.equalsIgnoreCase(expectedTitle);
+		if (verifyTitle) {
+			test1.pass("The titles are matched");
+		}
+		else {
+			test1.fail("The titles are not matched");
+			
+		}
+		
+		Assert.assertTrue(verifyTitle);
 	}
 	
 	@Test (priority = 0, description = "")
@@ -89,9 +98,20 @@ public class ExtentReport {
 		WebElement passwordInput = driver.findElement(By.name("password"));
 		
 		usernameInput.sendKeys("Admin");
-		test2.pass("Input valid username");
+		if(usernameInput.getText()=="Admin") {			
+			test2.pass("Input valid username");
+		}
+		else {
+			test2.fail("Username not entered");
+		}
 		passwordInput.sendKeys("admin123");
-		test2.pass("Input valid password");
+		if(passwordInput.getText()=="admin123") {			
+			test2.pass("Input valid password");
+		}
+		else {
+			test2.fail("Password not entered");
+
+		}
 		
 		WebElement submitButton = driver.findElement(By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']"));
 		submitButton.click();
